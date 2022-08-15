@@ -1,0 +1,22 @@
+[ {
+  "registrationNumber" : "WBW-68791",
+  "name" : "Aston Martin",
+  "fixed" : true,
+  "color" : "Blue",
+  "production" : 1980,
+  "id" : "2954cc2e-97bb-4348-89d7-5139449db615"
+}, {
+  "registrationNumber" : "GD-2137",
+  "name" : "Porsche",
+  "fixed" : true,
+  "color" : "Red",
+  "production" : 2012,
+  "id" : "1c78d6e9-87c5-4ed3-89b1-b5fbe9613958"
+}, {
+  "registrationNumber" : "BAC-2137",
+  "name" : "Maluch",
+  "fixed" : true,
+  "color" : "Żółty",
+  "production" : 2001,
+  "id" : "b312526d-204f-4c84-a291-1c214a1ea532"
+} ]

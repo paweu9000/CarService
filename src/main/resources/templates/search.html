@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Service</title>
+    <link th:href="@{/form-stylesheet.css}" rel="stylesheet">
+    <link th:href="@{/cars-stylesheet.css}" rel="stylesheet">
+</head>
+<body>
+<div class="topnav">
+    <a th:href="@{/}">Add car</a>
+    <a th:href="@{/cars}">Cars to repair</a>
+    <a th:href="@{/repaired}">Repaired cars</a>
+    <a th:href="@{/search}">Search</a>
+</div>
+
+<div class="container">
+    <h2 style="color: white;">Find car by license plate</h2>
+    <form method="post" th:object="${car}" th:action="@{/search/query}" style="padding-bottom: 15px">
+        <input type="text" placeholder="License Plate" th:field="*{registrationNumber}">
+        <input type="submit" value="Submit">
+    </form>
+
+    <table id="table" th:if="${car != null}">
+        <tr>
+            <th>License plates</th>
+            <th>Model</th>
+            <th>Color</th>
+            <th>Year of production</th>
+            <th>Status</th>
+            <th>Fix car</th>
+        </tr>
+        <tr th:each="car:${cars}">
+            <td th:text="${car.registrationNumber}"></td>
+            <td th:text="${car.name}"></td>
+            <td th:text="${car.color}"></td>
+            <td th:text="${car.production}"></td>
+            <td th:if="${car.isFixed()}">Repaired</td>
+            <td th:unless="${car.isFixed()}">Not repaired</td>
+            <td>
+                <a th:if="${!car.isFixed()}" th:href="@{/cars/fix(id=${car.getId()})}">Fix</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+</body>
+</html>

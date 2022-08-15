@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Service</title>
+    <link th:href="@{/form-stylesheet.css}" rel="stylesheet">
+</head>
+<body>
+<div class="topnav">
+    <a th:href="@{/}">Add car</a>
+    <a th:href="@{/cars}">Cars to repair</a>
+    <a th:href="@{/repaired}">Repaired Cars</a>
+    <a th:href="@{/search}">Search</a>
+</div>
+
+<div style="text-align: center;">
+    <h1>Car service</h1>
+</div>
+<div class="container">
+    <form method="post" th:object="${car}" th:action="@{/saveCar}">
+        <p style="color:red" th:errors="*{registrationNumber}"></p>
+        <input type="text" placeholder="License plate" th:field="*{registrationNumber}">
+        <p style="color:red" th:errors="*{name}"></p>
+        <input type="text" placeholder="Car model" th:field="*{name}">
+        <p style="color:red" th:errors="*{color}"></p>
+        <input type="text" placeholder="Color" th:field="*{color}">
+        <p style="color:red" th:errors="*{production}"></p>
+        <input type="number" min="1960" max="2022" placeholder="Time of production" th:field="*{production}">
+        <input type="hidden" th:field="*{fixed}">
+        <input type="hidden" th:field="*{id}">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>

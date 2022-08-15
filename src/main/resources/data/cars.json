@@ -1,0 +1,50 @@
+[ {
+  "registrationNumber" : "WBW-68791",
+  "name" : "Aston Martin",
+  "fixed" : true,
+  "color" : "Blue",
+  "production" : 1980,
+  "id" : "2954cc2e-97bb-4348-89d7-5139449db615"
+}, {
+  "registrationNumber" : "GD-2137",
+  "name" : "Porsche",
+  "fixed" : true,
+  "color" : "Red",
+  "production" : 2012,
+  "id" : "1c78d6e9-87c5-4ed3-89b1-b5fbe9613958"
+}, {
+  "registrationNumber" : "BAC-2137",
+  "name" : "Maluch",
+  "fixed" : true,
+  "color" : "Żółty",
+  "production" : 2001,
+  "id" : "b312526d-204f-4c84-a291-1c214a1ea532"
+}, {
+  "registrationNumber" : "GD-2137",
+  "name" : "Fiat",
+  "fixed" : false,
+  "color" : "Blue",
+  "production" : 2005,
+  "id" : "89f2a8cc-5b9a-4e70-94b1-0470f83dd55f"
+}, {
+  "registrationNumber" : "ABC-2137",
+  "name" : "Aston",
+  "fixed" : false,
+  "color" : "Red",
+  "production" : 1982,
+  "id" : "9782cac2-027c-4428-8805-02ef3d2afefa"
+}, {
+  "registrationNumber" : "GD-2137",
+  "name" : "Peugeot",
+  "fixed" : false,
+  "color" : "Red",
+  "production" : 2000,
+  "id" : "4ad5dfb5-7583-46df-aafd-e2506e227ba3"
+}, {
+  "registrationNumber" : "GD-2137",
+  "name" : "Nissan",
+  "fixed" : false,
+  "color" : "Red",
+  "production" : 2005,
+  "id" : "0e87d553-d8be-41d3-8a98-760624fa347f"
+} ]
